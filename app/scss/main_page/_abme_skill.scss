@@ -1,0 +1,43 @@
+@use "../util/" as u;
+.skills {
+  grid-area: abme-skill;
+  ul {
+    padding: 0 0 0 0;
+    list-style: none;
+    li {
+      padding-bottom: 1rem 1rem;
+    }
+  }
+  a {
+    font-size: clamp(u.rem(16), u.rem(12) + 1vw, u.rem(28));
+    font-family: u.$Lusitana, Arial;
+    margin: 1rem 2rem;
+    width: fit-content;
+  }
+  .pink {
+    a {
+      color: var(--pink);
+    }
+  }
+  .blue {
+    a {
+      color: var(--blue);
+    }
+  }
+}
+
+.grid-half {
+  ul li {
+    text-align: center;
+  }
+  @include u.breakpoint(medium) {
+    ul li {
+      text-align: left;
+    }
+    &__left {
+      ul li {
+        text-align: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use "sass:math";
+
+// throw an error if the parameter has a unit
+@function rem($pixel) {
+  // If $pixel has a unit, throw an error
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) + rem;
+  }
+  // Else, divide $pixel by 16 to return rems
+  @else {
+    @error "Error: do not use units when using the rem() functions; only number";
+  }
+}
+
+@function em($pixel) {
+  // If $pixel has a unit, throw an error
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) + em;
+  }
+  // Else, divide $pixel by 16 to return rems
+  @else {
+    @error "Error: do not use units when using the em() functions; only number";
+  }
+}

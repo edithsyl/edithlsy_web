@@ -1,0 +1,24 @@
+.experience {
+  grid-area: exp;
+  //position: absolute;
+  top: 50%;
+  // bottom: 20%;
+  img {
+    padding-top: 4rem;
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.blue-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 16rem;
+  background-color: var(--blue);
+  mix-blend-mode: difference;
+  overflow: hidden;
+}

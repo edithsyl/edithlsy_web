@@ -1,0 +1,55 @@
+@use "../util" as u;
+
+// bem
+// b = block, e = element contained in the block, m = modifier
+// keep class name unique, good organization
+
+.grid {
+  display: grid; // turn on css grid
+  grid-template-columns: 1fr; // frational unit
+  grid-template-rows: auto auto;
+  gap: u.rem(20);
+  margin-inline: auto;
+  width: min(100% - u.rem(20), u.rem(1000));
+
+  @include u.breakpoint(medium) {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+  }
+
+  &__main,
+  &__sidebar {
+    padding: u.rem(40);
+  }
+
+  &__main {
+    background-color: rgba(0, 0, 255, 0.065);
+  }
+  &__sidebar {
+    background-color: rgba(255, 0, 255, 0.147);
+    text-align: center;
+
+    @include u.breakpoint(medium) {
+      text-align: left;
+    }
+  }
+}
+
+.grid-half {
+  display: grid; // turn on css grid
+  grid-template-columns: 1fr; // frational unit
+  grid-template-rows: auto auto;
+  gap: u.rem(4);
+  margin-inline: auto;
+  //width: min(100% - 8rem, u.rem(1000));
+
+  @include u.breakpoint(medium) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  &__left,
+  &__right {
+    padding: 0 0 0 0;
+  }
+}

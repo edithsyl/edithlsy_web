@@ -1,0 +1,84 @@
+@use "../util/" as u;
+
+.contact {
+  grid-area: contact;
+  margin-left: auto;
+  margin-right: auto;
+
+  > * {
+    position: absolute;
+  }
+  .center1 {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .grid-half2 {
+      display: grid; // turn on css grid
+      grid-template-columns: 1fr; // frational unit
+      grid-template-rows: auto auto;
+      gap: u.rem(10);
+      margin-inline: auto;
+      //width: min(100% - 8rem, u.rem(1000));
+
+      text-align: center;
+      align-items: center;
+      @include u.breakpoint(medium) {
+        grid-template-columns: 1fr 9fr;
+        grid-template-rows: 40rem;
+        gap: u.rem(40);
+        text-align: left;
+        align-items: center;
+      }
+
+      &__left {
+        align-items: center;
+        @include u.breakpoint(medium) {
+          align-items: right;
+        }
+      }
+      &__left,
+      &__right {
+        padding: 0 0 0 0;
+      }
+    }
+  }
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, 0%);
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .icon {
+      width: u.rem(52);
+    }
+  }
+  h1 {
+    right: 0;
+  }
+}
+
+.pink-block {
+  padding: 0;
+  position: relative;
+  visibility: hidden;
+  width: 0%;
+  height: 0rem;
+  background-color: var(--pink);
+
+  @include u.breakpoint(medium) {
+    position: absolute;
+    visibility: visible;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: u.rem(100);
+    background-color: var(--pink);
+  }
+}

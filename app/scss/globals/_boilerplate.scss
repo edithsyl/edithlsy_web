@@ -1,0 +1,27 @@
+@use "../util" as u;
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 100%; //16 px
+}
+
+// wildcard to inherit from html
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0; // reset to overwrite browser setting
+  padding: 0;
+  font-family: u.$Lusitana, Arial;
+  background-color: var(--background);
+  color: var(--black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

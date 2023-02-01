@@ -1,0 +1,28 @@
+@use "../util" as u;
+
+section {
+  padding: u.rem(80) 0 u.rem(80) 0;
+}
+
+div {
+  padding: 0 0 u.rem(20) 0;
+}
+
+.padding1 {
+  padding: clamp(u.rem(28), u.rem(16) + 2vw, u.rem(72));
+}
+.padding2 {
+  padding: clamp(u.rem(20), u.rem(20) + 2vw, u.rem(160));
+}
+.padding-s {
+  padding: clamp(u.rem(8), u.rem(6) + 2vw, u.rem(12));
+}
+
+.padding-top {
+  padding: 0 0 u.rem(120) 0;
+}
+
+.center {
+  width: fit-content;
+  margin: auto;
+}

@@ -1,0 +1,89 @@
+@use "../util/" as u;
+
+.adjs {
+  grid-area: abme-adj;
+  border: 1px dashed rgb(44, 19, 19);
+  h1 {
+    font-size: clamp(u.rem(156), u.rem(132) + 2vw, u.rem(180));
+  }
+  p {
+    position: relative;
+    text-align: center;
+    @include u.breakpoint(medium) {
+      position: absolute;
+      top: 20%;
+      left: 15%;
+    }
+  }
+  &__container {
+    display: block;
+    h1 {
+      width: fit-content;
+      margin: 0;
+      font-family: Aerial;
+      font-size: u.rem(300);
+      font-weight: 100;
+      @include u.breakpoint(medium) {
+        font-size: u.rem(800);
+      }
+      left: 0;
+      @include u.breakpoint(small) {
+        font-size: u.rem(600);
+      }
+    }
+    .animatedText {
+      left: 500px;
+      color: var(--light-green);
+      position: absolute;
+      top: 45%;
+      left: 60%;
+      // transform: translate(-505, -50%);
+      height: u.rem(60);
+      overflow: hidden;
+
+      &__line {
+        text-align: left;
+        margin-bottom: 1rem;
+      }
+      &__line:first-child {
+        animation: rotate 12s infinite;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate3d();
+  }
+  25% {
+    margin-top: u.rem(-50);
+  }
+  50% {
+    margin-top: u.rem(-100);
+  }
+  75% {
+    margin-top: u.rem(-50);
+  }
+  100% {
+    margin-top: u.rem(0);
+  }
+}
+
+// @keyframes rotate {
+//   0% {
+//     margin-top: u.rem(0);
+//   }
+//   25% {
+//     margin-top: u.rem(-60);
+//   }
+//   50% {
+//     margin-top: u.rem(-120);
+//   }
+//   75% {
+//     margin-top: u.rem(-60);
+//   }
+//   100% {
+//     margin-top: u.rem(0);
+//   }
+// }

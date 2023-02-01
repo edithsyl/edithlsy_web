@@ -1,0 +1,25 @@
+@use "../util/" as u;
+
+.acheivements {
+  grid-area: abme-achieve;
+  border: 1px dashed rgb(255, 243, 243);
+  background-color: var(--orange);
+  text-align: left;
+  h1 {
+    color: var(--white);
+  }
+  &__item {
+    width: min-content;
+    margin: 0 0 0 0;
+    // padding: u.rem(80);
+    &__title {
+      font-size: clamp(u.rem(16), u.rem(12) + 1vw, u.rem(20));
+      font-weight: 700;
+      p {
+        margin: 0 0 0 0;
+        text-align: center;
+        width: min-content;
+      }
+    }
+  }
+}

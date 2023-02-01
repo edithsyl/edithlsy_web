@@ -1,0 +1,87 @@
+@use "../util/" as u;
+
+.intro {
+  position: relative;
+  grid-area: abme-intro;
+  border: 1px dashed rgb(228, 93, 93);
+  height: 100%;
+  width: 100%;
+
+  &__item1 {
+    width: 300%;
+    height: 300%;
+    overflow: visible;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include u.breakpoint(medium) {
+      overflow: hidden;
+      width: u.rem(400);
+      height: u.rem(200);
+      top: 20%;
+      left: 10%;
+      transform: none;
+    }
+  }
+  &__item2 {
+    position: absolute;
+    width: 40%;
+    top: 30%;
+    @include u.breakpoint(medium) {
+      top: 50%;
+    }
+    display: block;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__item3 {
+    position: absolute;
+    width: u.rem(300);
+    height: u.rem(150);
+    top: 60%;
+    right: 10%;
+    overflow: hidden;
+    visibility: hidden;
+    @include u.breakpoint(medium) {
+      visibility: visible;
+    }
+  }
+  &__item4 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    @include u.breakpoint(medium) {
+      top: 80%;
+    }
+    display: block;
+    width: max-content;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    p {
+      padding-top: u.rem(12);
+      width: max-content;
+      text-align: left;
+      margin: auto;
+      @include u.breakpoint(medium) {
+        // padding-top: u.rem(60);
+        width: 75%;
+      }
+    }
+  }
+}
+
+.round-cropper {
+  width: u.rem(140);
+  height: u.rem(140);
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 100%;
+  @include u.breakpoint(medium) {
+    width: 40%;
+    height: auto;
+    border-radius: 0%;
+    overflow: visible;
+    object-fit: contain;
+  }
+}

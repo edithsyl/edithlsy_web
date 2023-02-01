@@ -1,0 +1,60 @@
+@use "../util" as u;
+@use "./colors";
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1; //110%
+  margin-top: 0; // overwrite browser preference
+}
+
+h1 {
+  font-size: clamp(u.rem(28), u.rem(16) + 2vw, u.rem(40));
+}
+h2 {
+  font-size: clamp(u.rem(22), u.rem(14) + 1.5vw, u.rem(36));
+}
+h3 {
+  font-size: clamp(u.rem(16), u.rem(12) + 1vw, u.rem(28));
+}
+
+p {
+  font-size: clamp(u.rem(13), u.rem(12) + 1vw, u.rem(16));
+  margin-top: 0;
+
+  &.bookish::first-letter {
+    color: var(--pink);
+    padding: 0 u.rem(16) 0 0;
+    // margin: 0 0.3rem 0 0;
+    // border: 2px solid;
+    // border-radius: 8px;
+
+    font-size: 4rem;
+    float: left;
+    line-height: 1;
+  }
+}
+
+a,
+a:visited,
+a:active {
+  // all links
+  text-decoration: none;
+}
+
+.pink {
+  color: var(--pink);
+}
+.blue {
+  color: var(--blue);
+}
+.green {
+  color: var(--green);
+}
+
+.extra-l-title {
+  font-size: clamp(u.rem(30), u.rem(30) + 2vw, u.rem(180));
+  margin: 0;
+  padding-bottom: u.rem(20);
+}
