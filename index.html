@@ -19,7 +19,6 @@
     <header class="header" id="header">
       <nav class="nav" id="topNav">
         <img src="./app/assets/images/logo.png" alt="ESYL" class="nav__logo" />
-        <!-- <a href="#" class="nav__element logo">ESYL</a> -->
         <div class="nav__element" id="nav-menu">
           <div class="menu__list">
             <ul>
@@ -40,10 +39,12 @@
                 <a href="#contact" class="menu__list__item__link"> Contact </a>
               </li>
             </ul>
-            <!-- <a href="javascript:void(0);" class="icon" onclick="clickMenu()">
-              <i class="icon icon-menu" id="nav-close"></i>
-            </a> -->
           </div>
+          <a href="javascript:void(0);" class="menu-icon" onclick="clickMenu()">
+            <div class="icon_btn">
+              <div class="menu-svg" id="nav-close"></div>
+            </div>
+          </a>
         </div>
       </nav>
     </header>
@@ -71,7 +72,7 @@
           <div class="e-svg"></div>
         </div>
       </section>
-      <section class="intro padding1">
+      <section class="intro padding1" id="aboutMe">
         <div class="intro__item1">
           <div class="pattern-front"></div>
         </div>
@@ -264,15 +265,26 @@
                 collaborate with? <br />Feel free to get in touch to me :)
               </p>
               <div class="contact__icons">
-                <button class="icon_btn">
-                  <img src="./app/assets/icons/facebook.png" alt="facebook" />
-                  <a
-                    href="https://www.facebook.com/E.Leungsy/"
-                    class="icon-eml"
-                  ></a>
-                </button>
-                <button class="icon_btn"><i class="icon icon-fb"></i></button>
-                <button class="icon_btn"><i class="icon icon-ln"></i></button>
+                <a href="mailto: syleung1220@gmail.com">
+                  <div class="icon_btn">
+                    <div class="email-svg"></div>
+                  </div>
+                </a>
+                <a href="https://www.facebook.com/E.Leungsy/">
+                  <div class="icon_btn">
+                    <div class="facebook-svg"></div>
+                  </div>
+                </a>
+                <a href="https://www.linkedin.com/in/leung-sze-yu-3a26251a6">
+                  <div class="icon_btn">
+                    <div class="linkn-svg"></div>
+                  </div>
+                </a>
+                <a href="https://github.com/edithsyl?tab=repositories">
+                  <div class="icon_btn">
+                    <div class="github-svg"></div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

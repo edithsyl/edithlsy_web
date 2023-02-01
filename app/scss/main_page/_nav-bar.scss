@@ -19,7 +19,6 @@
 }
 
 header {
-  // grid-area: 1 / 1 / 2 / 2;
   padding: u.rem(20);
   background-color: var(--background-opa);
   position: fixed;
@@ -34,6 +33,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
 
   &__element {
@@ -49,16 +49,18 @@ header {
     align-content: center;
     &__list {
       padding: 0;
-      grid-template-columns: repeat(3, 1fr);
       align-items: center;
-      // gap: 2rem;
+
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
+        display: none;
+        @include u.breakpoint(medium) {
+          display: block;
+        }
       }
-
       li {
         float: left;
         padding: u.rem(8) u.rem(40);
@@ -70,7 +72,6 @@ header {
         font-size: clamp(u.rem(14), u.rem(12) + 1vw, u.rem(24));
         font-weight: 700;
       }
-
       /* Change the link color to #111 (black) on hover */
       li a:hover {
         color: var(--green);
@@ -78,6 +79,14 @@ header {
       li a:active {
         color: var(--pink);
       }
+      // resposive
     }
+  }
+}
+
+.menu-icon {
+  display: block;
+  @include u.breakpoint(medium) {
+    display: none;
   }
 }

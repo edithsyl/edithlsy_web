@@ -97,47 +97,23 @@ a:active {
   padding-bottom: 1.25rem;
 }
 
-.icon {
-  display: block;
-  width: clamp(1rem, 0.75rem + 1vw, 1.75rem);
-  height: clamp(1rem, 0.75rem + 1vw, 1.75rem);
-}
-
-.icon-eml {
-  display: block;
-  width: clamp(1rem, 0.75rem + 1vw, 1.75rem);
-  height: clamp(1rem, 0.75rem + 1vw, 1.75rem);
-  background-image: url(../../assets/icons/mail.png);
-  background-repeat: no-repeat;
-}
-
-.icon-fb {
-  background-image: url(../../assets/icons/facebook.png);
-}
-
-.icon-ln {
-  background-image: url(../../assets/icons/linkedin.png);
-}
-
-.icon-menu {
-  background-image: url(../../assets/icons/menu.png);
-}
-
 .icon_btn {
   border: none; /* Remove borders */
-  color: var(--black); /* White text */
+  color: white; /* White text */
   font-size: 16px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
-  min-width: 1%;
+  width: 3.75rem;
+  height: 3.75rem;
   text-align: center;
-  padding: 1rem 1rem;
-  background-color: var(--background);
+  padding: 0.75rem 0.75rem;
+  background-color: rgba(0, 0, 0, 0);
   transition-duration: 0.2s;
 }
 
 .icon_btn:hover {
-  background-color: var(--black);
-  color: white;
+  border: 3px solid;
+  border-radius: 10%;
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(180deg) brightness(104%) contrast(97%);
 }
 
 .grid {
@@ -572,6 +548,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
 }
 .nav__element {
@@ -588,7 +565,6 @@ header {
 }
 .nav .menu__list {
   padding: 0;
-  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   /* Change the link color to #111 (black) on hover */
 }
@@ -597,6 +573,12 @@ header {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  display: none;
+}
+@media (min-width: 43.75em) {
+  .nav .menu__list ul {
+    display: block;
+  }
 }
 .nav .menu__list li {
   float: left;
@@ -614,6 +596,15 @@ header {
 }
 .nav .menu__list li a:active {
   color: var(--pink);
+}
+
+.menu-icon {
+  display: block;
+}
+@media (min-width: 43.75em) {
+  .menu-icon {
+    display: none;
+  }
 }
 
 .contact {
@@ -667,6 +658,7 @@ header {
   padding: 0 0 0 0;
 }
 .contact__icons {
+  margin-top: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
