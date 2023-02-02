@@ -539,9 +539,32 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  overflow: hidden;
   display: block;
   z-index: 2;
+}
+
+.nav.responsive .menu__list {
+  position: relative;
+  float: right;
+  display: block;
+  text-align: right;
+}
+.nav.responsive .menu__list ul {
+  overflow: visible;
+  position: absolute;
+  right: -1.5rem;
+  top: 5rem;
+  display: block;
+  text-align: right;
+  background-color: var(--background-opa);
+  padding: 1rem 2rem;
+}
+.nav.responsive .menu__list ul li {
+  margin-bottom: 0.5rem;
+}
+.nav.responsive .menu__list ul li a {
+  text-align: right;
+  align-items: right;
 }
 
 .nav {
@@ -556,9 +579,19 @@ header {
   height: fit-content;
 }
 .nav__logo {
-  width: 12%;
+  width: 25%;
   height: auto;
   padding: 0 1.5rem;
+}
+@media (min-width: 43.75em) {
+  .nav__logo {
+    width: 20%;
+  }
+}
+@media (min-width: 56.25em) {
+  .nav__logo {
+    width: 12%;
+  }
 }
 .nav .menu {
   align-content: center;
@@ -581,6 +614,7 @@ header {
   }
 }
 .nav .menu__list li {
+  margin-bottom: 0;
   float: left;
   padding: 0.5rem 2.5rem;
 }

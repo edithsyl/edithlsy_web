@@ -25,9 +25,39 @@ header {
   top: 0;
   width: 100%;
 
-  overflow: hidden;
+  // overflow: hidden;
   display: block;
   z-index: 2;
+}
+.nav.responsive {
+  .menu__list {
+    position: relative;
+    float: right;
+    display: block;
+    text-align: right;
+    ul {
+      overflow: visible;
+      position: absolute;
+      right: u.rem(-24);
+      top: u.rem(80);
+      display: block;
+      text-align: right;
+      background-color: var(--background-opa);
+      padding: u.rem(16) u.rem(32);
+      li {
+        margin-bottom: u.rem(8);
+        a {
+          text-align: right;
+          align-items: right;
+        }
+      }
+    }
+  }
+}
+.nav.responsive:not(:hover) {
+  #topNav{
+    removeClass('responsive');
+  }
 }
 .nav {
   width: 100%;
@@ -41,9 +71,15 @@ header {
     height: fit-content;
   }
   &__logo {
-    width: 12%;
+    width: 25%;
     height: auto;
     padding: 0 u.rem(24);
+    @include u.breakpoint(medium) {
+      width: 20%;
+    }
+    @include u.breakpoint(large) {
+      width: 12%;
+    }
   }
   .menu {
     align-content: center;
@@ -62,6 +98,7 @@ header {
         }
       }
       li {
+        margin-bottom: 0;
         float: left;
         padding: u.rem(8) u.rem(40);
       }
