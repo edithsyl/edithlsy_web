@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/edithsyl/edithlsy_web#readme",
   "devDependencies": {
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-imagemin": "^8.0.0",
