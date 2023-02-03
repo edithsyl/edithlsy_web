@@ -1,3 +1,20 @@
+@use "../util/" as u;
+.bg-dark-yellow {
+  background-color: #f4e604;
+}
+.bg-light-yellow {
+  background-color: #feffbe;
+}
+.bg-purple {
+  background-color: #aa8d97;
+}
+.bg-pink {
+  background-color: #f9ab8b;
+}
+.bg-blue {
+  background-color: #698cb9;
+}
+
 .projects {
   grid-area: project;
   // position: absolute;
