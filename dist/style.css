@@ -37,6 +37,7 @@ img {
   --orange: #f5c471;
   --yellow: #f4e404bc;
   --black: #4b5161;
+  --grey: #808478;
   --light-grey: #c2c2c480;
   --white: #fff;
 }
@@ -770,4 +771,160 @@ header {
 
 .projects {
   grid-area: project;
+  margin: 0;
+}
+
+.p1 {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.p2 {
+  position: absolute;
+  z-index: 3;
+  top: 15%;
+  left: 50%;
+}
+
+.p3 {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+}
+
+.p4 {
+  position: absolute;
+  z-index: 5;
+  top: 30%;
+  left: 100%;
+}
+
+.p5 {
+  position: absolute;
+  z-index: 6;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p6 {
+  position: absolute;
+  z-index: 27;
+  top: 50%;
+  left: 50%;
+}
+
+.bg-dark-yellow {
+  background-color: #f4e604;
+}
+
+.bg-light-yellow {
+  background-color: #feffbe;
+}
+
+.bg-purple {
+  background-color: #aa8d97;
+}
+
+.bg-pink {
+  background-color: #f9ab8b;
+}
+
+.bg-blue {
+  background-color: #698cb9;
+}
+
+.pcontainer {
+  padding: 0;
+  margin: auto;
+  width: 62.5rem;
+  height: 62.5rem;
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--yellow);
+}
+
+.proj {
+  position: relative;
+  height: 18.75rem;
+}
+.proj__number {
+  position: absolute;
+  z-index: 1;
+  transition: content 1s ease-out 100ms;
+  width: fit-content;
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.proj__number p {
+  padding-bottom: 0;
+  margin-bottom: 0px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif, Arial;
+  font-weight: 450;
+  line-height: 1;
+  margin-top: 0;
+  font-size: clamp(0.75rem, 1rem + 2vw, 1.75rem);
+}
+.proj__number .skill-section {
+  display: none;
+  margin-left: 15.625rem;
+  padding-bottom: 0;
+}
+.proj__number .skill-section__title {
+  padding-bottom: 0;
+  margin-bottom: 0.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Josefin Sans", sans-serif, Arial;
+  font-weight: 350;
+  line-height: 1;
+  margin-top: 0;
+  font-size: clamp(0.75rem, 1rem + 2vw, 1rem);
+}
+.proj__number .skill-section__skills {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+.proj__number .skill-section__skills p {
+  padding-bottom: 2px;
+  margin-bottom: 0px;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "Josefin Sans", sans-serif, Arial;
+  font-weight: 450;
+  line-height: 1;
+  margin-top: 0;
+  font-size: clamp(0.875rem, 1rem + 2vw, 1.125rem);
+}
+.proj__number:hover + skill-section {
+  visibility: visible;
+}
+.proj__info {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 1rem;
+  width: 15.625rem;
+  height: 15.625rem;
+}
+.proj__info .wordings {
+  position: absolute;
+  bottom: 0;
+  height: min-content;
+}
+.proj__info .wordings h2 {
+  font-family: "Josefin Sans", sans-serif, Arial;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.proj__info .wordings p {
+  font-family: "Josefin Sans", sans-serif, Arial;
+  font-weight: 400;
+  color: var(--grey);
 }/*# sourceMappingURL=style.css.map */

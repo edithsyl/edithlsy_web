@@ -17,6 +17,12 @@
 
 .projects {
   grid-area: project;
-  // position: absolute;
-  // bottom: 5px;
+  margin: 0;
+}
+
+.rojects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }

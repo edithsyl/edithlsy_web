@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/edithsyl/edithlsy_web#readme",
   "devDependencies": {
+    "animejs": "^3.2.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
