@@ -1,6 +1,7 @@
 // https://www.youtube.com/watch?v=ubHwScDfRQA
 // list dependences
-import gulp from "gulp";
+// import gulp from "gulp";
+var cloudflare = require("gulp-cloudflare");
 const { src, dest, watch, series } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const prefix = require("gulp-autoprefixer");
@@ -12,23 +13,21 @@ const imagewebp = require("gulp-webp");
 // create functions
 // scss
 function compilescss() {
-  return gulp
-    .src("scss/*.scss")
+  return src("scss/*.scss")
     .pipe(sass())
     .pipe(prefix("last 2 versions"))
     .pipe(minify())
-    .pipe(gulp.dest("/dist"));
+    .pipe(dest("/dist"));
 }
 
 // javascript
 function jsmin() {
-  return gulp.src("js/*.js").pipe(gulp.dest("/dist/js"));
+  return src("js/*.js").pipe(dest("/dist/js"));
 }
 
 // images
 function optimizeimg() {
-  return gulp
-    .src("app/assets/images/*{jpg,png}")
+  return src("app/assets/images/*{jpg,png}")
     .pipe(
       imagemin([
         imagemin.mozjpeg({ quality: 80, progressive: true }),
@@ -39,28 +38,21 @@ function optimizeimg() {
 }
 // webp images
 function webpImage() {
-  return gulp
-    .src("app/assets/images/*{jpg,png}")
+  return src("app/assets/images/*{jpg,png}")
     .pipe(imagewebp())
-    .pipe(gulp.dest("dist/images"));
+    .pipe(dest("dist/images"));
 }
 
 // create watchtask
 function watchtask() {
-  gulp.watch("app/assets/scss/*.scss", compilescss);
-  gulp.watch("app/assets/js/*.js", jsmin);
-  gulp.watch("app/assets/images/*{jpg,png}", optimizeimg);
-  gulp.watch("app/assets/images/*{jpg,png}", webpImage);
+  watch("app/assets/scss/*.scss", compilescss);
+  watch("app/assets/js/*.js", jsmin);
+  watch("app/assets/images/*{jpg,png}", optimizeimg);
+  watch("app/assets/images/*{jpg,png}", webpImage);
 }
 
 //Default gulp task
-exports.default = gulp.series(
-  compilescss,
-  jsmin,
-  optimizeimg,
-  webpImage,
-  watchtask
-);
+exports.default = series(compilescss, jsmin, optimizeimg, webpImage, watchtask);
 
 //Build gulp task
-exports.build = gulp.series(compilescss, gulp.parallel(jsmin));
+exports.build = series(compilescss, gulp.parallel(jsmin));
