@@ -220,36 +220,33 @@ div {
 }
 .intro__item2 {
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   z-index: 1;
   text-align: center;
-  min-width: 25rem;
+  min-width: 18.75rem;
   top: 50%;
 }
 .intro__item2 img {
-  margin: auto;
-  width: 25rem;
-}
-.intro__item2 p {
-  padding-top: 2.5rem;
-  text-align: left;
-  margin: auto;
-}
-
-.round-cropper {
-  width: 8.75rem;
-  height: 8.75rem;
+  width: 5rem;
+  height: 5rem;
   object-fit: cover;
   overflow: hidden;
   border-radius: 100%;
 }
 @media (min-width: 43.75em) {
-  .round-cropper {
-    width: 40%;
-    height: auto;
-    border-radius: 0%;
-    overflow: visible;
-    object-fit: contain;
+  .intro__item2 img {
+    width: 8.75rem;
+    height: 8.75rem;
   }
+}
+.intro__item2 p {
+  width: 75%;
+  text-align: left;
+  margin: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .adjs {

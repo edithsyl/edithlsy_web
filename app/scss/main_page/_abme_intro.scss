@@ -25,33 +25,30 @@
   }
   &__item2 {
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     z-index: 1;
     text-align: center;
-    min-width: u.rem(400);
+    min-width: u.rem(300);
     top: 50%;
     img {
-      margin: auto;
-      width: u.rem(400);
+      width: u.rem(80);
+      height: u.rem(80);
+      object-fit: cover;
+      overflow: hidden;
+      border-radius: 100%;
+      @include u.breakpoint(medium) {
+        width: u.rem(140);
+        height: u.rem(140);
+      }
     }
     p {
-      padding-top: u.rem(40);
+      width: 75%;
       text-align: left;
       margin: auto;
+      margin-left: 0;
+      margin-right: 0;
     }
-  }
-}
-
-.round-cropper {
-  width: u.rem(140);
-  height: u.rem(140);
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 100%;
-  @include u.breakpoint(medium) {
-    width: 40%;
-    height: auto;
-    border-radius: 0%;
-    overflow: visible;
-    object-fit: contain;
   }
 }
