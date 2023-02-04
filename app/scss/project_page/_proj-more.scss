@@ -1,0 +1,41 @@
+@use "../util" as u;
+
+.back a {
+  font-family: u.$Lusitana;
+  margin-bottom: u.rem(100);
+  height: u.rem(24);
+}
+
+.st-container {
+  display: flex;
+  flex-direction: row;
+}
+.st-item {
+  padding: u.rem(8) u.rem(16);
+  margin: 0 u.rem(4);
+  border-radius: u.rem(24);
+}
+.st-pink {
+  background: rgb(255, 240, 249);
+}
+.st-blue {
+  background: rgb(240, 250, 255);
+}
+
+.persona {
+  &__title {
+    .persona-m-img {
+      width: u.rem(100);
+      height: u.rem(100);
+      object-fit: scale-down;
+      border-radius: 100%;
+      background-position: center;
+      background-image: url("/app/assets/decor/guy\ persona.png");
+    }
+    .img {
+      width: u.rem(150);
+      height: u.rem(150);
+      object-fit: cover;
+    }
+  }
+}

@@ -22,11 +22,11 @@
   width: 100%;
   height: 0;
   padding: 0; /* reset */
-  padding-bottom: calc(100% * 1536 / 1650);
+  padding-bottom: calc(105%);
   min-height: 200px;
   background-size: cover;
   display: block;
-  background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='auto' viewBox='0 0 1650 1536' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%233ddsowuowa)'%3E%3Cpath d='M-374 1008.1C876.461 560.403 1038.21-394.379 602.729 229.199 167.245 852.776 328.072 911.164 425.424 877.902 530.5 842 645 603.5 425.424 756.841 209.935 907.328 94.683 1460.36 658.719 1503.76 1092.35 1537.13 1590.91 1373.57 1734 1008.1' stroke='%23BDDEC2' stroke-opacity='.5' stroke-width='43'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='3ddsowuowa'%3E%3Cpath fill='%23fff' d='M0 0h1752v1536H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='auto' viewBox='0 0 1500 1580' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%233ddsowuowa)'%3E%3Cpath d='M-374 1008.1C876.461 560.403 1038.21-394.379 602.729 229.199 167.245 852.776 328.072 911.164 425.424 877.902 530.5 842 645 603.5 425.424 756.841 209.935 907.328 94.683 1460.36 658.719 1503.76 1092.35 1537.13 1590.91 1373.57 1734 1008.1' stroke='%23BDDEC2' stroke-opacity='.5' stroke-width='43'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='3ddsowuowa'%3E%3Cpath fill='%23fff' d='M0 0h1752v1536H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 }
 .flower-svg {
   width: 100%;

@@ -1,7 +1,9 @@
 @use "../util/" as u;
 @import "../util/parallax";
 @include parallax-init;
-
+a {
+  color: var(--black);
+}
 .hero {
   grid-area: "hero";
   min-height: u.rem(600);
@@ -12,7 +14,6 @@
     transform: translate(-50%, -50%);
   }
   &__item1 {
-    @include parallax(0.2);
     padding: u.rem(400) 0 u.rem(400) 0;
     .title-text {
       font-size: clamp(u.rem(40), u.rem(32) + 2vw, u.rem(80));
@@ -36,45 +37,20 @@
       min-width: 2%;
       text-align: center;
       margin-top: u.rem(120);
+      margin-left: auto;
+      margin-right: auto;
       padding: u.rem(16) u.rem(16);
       background-color: opacity($color: #00000000);
       color: var(--black);
       border: 2px solid var(--black);
       transition-duration: 0.4s;
-      p {
-        margin-bottom: 0;
-      }
+
+      color: var(--black);
     }
     &__button:hover {
       background-color: var(--black);
-      color: white;
-    }
-  }
-  &__item2 {
-    @include parallax(-0.4);
-    width: u.rem(500);
-    height: u.rem(500);
-    top: -5rem;
-    left: -2rem;
-    overflow: visible;
-    transform: none;
-    @include u.breakpoint(medium) {
-      overflow: hidden;
-      width: u.rem(1400);
-      height: u.rem(1400);
-      transform: translate(-50%, -50%);
-      bottom: none;
-      right: none;
-      top: -5rem;
-      left: 0rem;
-      transform: none;
-    }
 
-    @include u.breakpoint(xlarge) {
-      width: u.rem(2000);
-      height: u.rem(2000);
-      top: -20rem;
-      left: 0rem;
+      color: var(--background);
     }
   }
 

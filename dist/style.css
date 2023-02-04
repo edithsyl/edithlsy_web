@@ -326,21 +326,22 @@ div {
   }
 }
 .acheivements {
+  margin: 0 0 0 0;
   grid-area: abme-achieve;
-  border: 1px dashed rgb(255, 243, 243);
   background-color: var(--orange);
-  text-align: left;
+  text-align: center;
+  width: 100%;
 }
 .acheivements h1 {
   color: var(--white);
 }
 .acheivements__item {
-  width: min-content;
   margin: 0 0 0 0;
 }
 .acheivements__item__title {
   font-size: clamp(1rem, 0.75rem + 1vw, 1.25rem);
   font-weight: 700;
+  text-align: center;
 }
 .acheivements__item__title p {
   margin: 0 0 0 0;
@@ -421,6 +422,10 @@ body * {
   transform-style: preserve-3d;
 }
 
+a {
+  color: var(--black);
+}
+
 .hero {
   grid-area: "hero";
   min-height: 37.5rem;
@@ -431,8 +436,6 @@ body * {
   transform: translate(-50%, -50%);
 }
 .hero__item1 {
-  transform: translateZ(0.2px) scale(0.8);
-  z-index: 200;
   padding: 25rem 0 25rem 0;
 }
 .hero__item1 .title-text {
@@ -457,49 +460,18 @@ body * {
   min-width: 2%;
   text-align: center;
   margin-top: 7.5rem;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1rem 1rem;
   background-color: 0;
   color: var(--black);
   border: 2px solid var(--black);
   transition-duration: 0.4s;
-}
-.hero__item1__button p {
-  margin-bottom: 0;
+  color: var(--black);
 }
 .hero__item1__button:hover {
   background-color: var(--black);
-  color: white;
-}
-.hero__item2 {
-  transform: translateZ(-0.4px) scale(1.4);
-  z-index: -400;
-  width: 31.25rem;
-  height: 31.25rem;
-  top: -5rem;
-  left: -2rem;
-  overflow: visible;
-  transform: none;
-}
-@media (min-width: 43.75em) {
-  .hero__item2 {
-    overflow: hidden;
-    width: 87.5rem;
-    height: 87.5rem;
-    transform: translate(-50%, -50%);
-    bottom: none;
-    right: none;
-    top: -5rem;
-    left: 0rem;
-    transform: none;
-  }
-}
-@media (min-width: 90em) {
-  .hero__item2 {
-    width: 125rem;
-    height: 125rem;
-    top: -20rem;
-    left: 0rem;
-  }
+  color: var(--background);
 }
 .hero > * {
   position: absolute;
@@ -768,4 +740,43 @@ header {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.back a {
+  font-family: "Lusitana", serif;
+  margin-bottom: 6.25rem;
+  height: 1.5rem;
+}
+
+.st-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.st-item {
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 1.5rem;
+}
+
+.st-pink {
+  background: rgb(255, 240, 249);
+}
+
+.st-blue {
+  background: rgb(240, 250, 255);
+}
+
+.persona__title .persona-m-img {
+  width: 6.25rem;
+  height: 6.25rem;
+  object-fit: scale-down;
+  border-radius: 100%;
+  background-position: center;
+  background-image: url("/app/assets/decor/guy persona.png");
+}
+.persona__title .img {
+  width: 9.375rem;
+  height: 9.375rem;
+  object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
