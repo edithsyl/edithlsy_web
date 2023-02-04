@@ -425,9 +425,6 @@ body * {
   grid-area: "hero";
   min-height: 37.5rem;
 }
-.hero h1 {
-  font-size: clamp(2.5rem, 2rem + 2vw, 5rem);
-}
 .hero .center1 {
   top: 50%;
   left: 50%;
@@ -437,6 +434,24 @@ body * {
   transform: translateZ(0.2px) scale(0.8);
   z-index: 200;
   padding: 25rem 0 25rem 0;
+}
+.hero__item1 .title-text {
+  font-size: clamp(2.5rem, 2rem + 2vw, 5rem);
+}
+.hero__item1 .text-container {
+  padding-bottom: 0;
+  width: fit-content;
+}
+.hero__item1 .sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background);
+  border-left: 2px solid var(--pink);
+  animation: text-animate 3s steps(8) infinite;
 }
 .hero__item1__button {
   min-width: 2%;
@@ -488,6 +503,17 @@ body * {
 }
 .hero > * {
   position: absolute;
+}
+@keyframes text-animate {
+  40% {
+    left: 100%;
+  }
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 
 .main {

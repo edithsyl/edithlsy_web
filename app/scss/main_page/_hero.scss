@@ -5,9 +5,7 @@
 .hero {
   grid-area: "hero";
   min-height: u.rem(600);
-  h1 {
-    font-size: clamp(u.rem(40), u.rem(32) + 2vw, u.rem(80));
-  }
+
   .center1 {
     top: 50%;
     left: 50%;
@@ -16,6 +14,24 @@
   &__item1 {
     @include parallax(0.2);
     padding: u.rem(400) 0 u.rem(400) 0;
+    .title-text {
+      font-size: clamp(u.rem(40), u.rem(32) + 2vw, u.rem(80));
+    }
+    .text-container {
+      padding-bottom: 0;
+      width: fit-content;
+    }
+    .sec-text:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--background);
+      border-left: 2px solid var(--pink);
+      animation: text-animate 3s steps(8) infinite;
+    }
     &__button {
       min-width: 2%;
       text-align: center;
@@ -64,5 +80,16 @@
 
   > * {
     position: absolute;
+  }
+  @keyframes text-animate {
+    40% {
+      left: 100%;
+    }
+    60% {
+      left: 100%;
+    }
+    100% {
+      left: 0%;
+    }
   }
 }
