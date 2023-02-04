@@ -4,69 +4,39 @@
   position: relative;
   grid-area: abme-intro;
   border: 1px dashed rgb(228, 93, 93);
-  height: 100%;
   width: 100%;
+  height: 100%;
 
   &__item1 {
-    width: 300%;
-    height: 300%;
+    z-index: 0;
+    min-width: u.rem(400);
     overflow: visible;
     position: absolute;
-    top: 150%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    @include u.breakpoint(medium) {
-      overflow: hidden;
+    @include u.breakpoint(large) {
       width: u.rem(400);
       height: u.rem(200);
-      top: 20%;
+      top: 18%;
       left: 10%;
       transform: none;
     }
   }
   &__item2 {
     position: absolute;
-    width: 40%;
-    top: 30%;
-    @include u.breakpoint(medium) {
-      top: 50%;
-    }
-    display: block;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  &__item3 {
-    position: absolute;
-    width: u.rem(300);
-    height: u.rem(150);
-    top: 60%;
-    right: 10%;
-    overflow: hidden;
-    visibility: hidden;
-    @include u.breakpoint(medium) {
-      visibility: visible;
-    }
-  }
-  &__item4 {
-    position: absolute;
-    width: 100%;
+    z-index: 1;
+    text-align: center;
+    min-width: u.rem(400);
     top: 50%;
-    @include u.breakpoint(medium) {
-      top: 80%;
+    img {
+      margin: auto;
+      width: u.rem(400);
     }
-    display: block;
-    width: max-content;
-    left: 50%;
-    transform: translate(-50%, -50%);
     p {
-      padding-top: u.rem(12);
-      width: max-content;
+      padding-top: u.rem(40);
       text-align: left;
       margin: auto;
-      @include u.breakpoint(medium) {
-        // padding-top: u.rem(60);
-        width: 75%;
-      }
     }
   }
 }
