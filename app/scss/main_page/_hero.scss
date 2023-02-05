@@ -5,7 +5,7 @@ a {
   color: var(--black);
 }
 .hero {
-  grid-area: "hero";
+  grid-area: hero;
   min-height: u.rem(600);
 
   .center1 {
@@ -20,6 +20,7 @@ a {
     }
     .text-container {
       padding-bottom: 0;
+      margin-bottom: u.rem(40);
       width: fit-content;
     }
     .sec-text:before {
@@ -36,7 +37,7 @@ a {
     &__button {
       min-width: 2%;
       text-align: center;
-      margin-top: u.rem(120);
+      margin-top: u.rem(180);
       margin-left: auto;
       margin-right: auto;
       padding: u.rem(16) u.rem(16);

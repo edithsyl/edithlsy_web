@@ -2,7 +2,7 @@
 
 .adjs {
   grid-area: abme-adj;
-  border: 1px dashed rgb(44, 19, 19);
+  align-items: center;
   h1 {
     font-size: clamp(u.rem(156), u.rem(132) + 2vw, u.rem(180));
   }
@@ -37,7 +37,6 @@
       position: absolute;
       top: 45%;
       left: 60%;
-      // transform: translate(-505, -50%);
       height: u.rem(60);
       overflow: hidden;
 
