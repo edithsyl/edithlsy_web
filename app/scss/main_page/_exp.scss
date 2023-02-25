@@ -1,8 +1,7 @@
 .experience {
   grid-area: exp;
-  //position: absolute;
   top: 50%;
-  // bottom: 20%;
+  margin: 0;
   img {
     padding-top: 4rem;
     width: 40%;
@@ -11,14 +10,9 @@
     margin-left: auto;
     margin-right: auto;
   }
-}
-.blue-block {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60%;
-  height: 16rem;
-  background-color: var(--blue);
-  mix-blend-mode: difference;
-  overflow: hidden;
+  .center1 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

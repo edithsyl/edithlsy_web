@@ -114,7 +114,8 @@ a:active {
 .icon_btn:hover {
   border: 3px solid;
   border-radius: 10%;
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(180deg) brightness(104%) contrast(97%);
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(180deg)
+    brightness(104%) contrast(97%);
 }
 
 .grid {
@@ -131,7 +132,8 @@ a:active {
     grid-template-rows: auto;
   }
 }
-.grid__main, .grid__sidebar {
+.grid__main,
+.grid__sidebar {
   padding: 2.5rem;
 }
 .grid__main {
@@ -160,7 +162,8 @@ a:active {
     grid-template-rows: auto;
   }
 }
-.grid-half__left, .grid-half__right {
+.grid-half__left,
+.grid-half__right {
   padding: 0 0 0 0;
 }
 
@@ -374,7 +377,7 @@ a {
 .acheivements {
   margin: 0 0 0 0;
   grid-area: abme-achieve;
-  background-color: var(--orange);
+  background-color: var(--brown);
   text-align: center;
   width: 100%;
 }
@@ -592,7 +595,8 @@ header {
     align-items: right;
   }
 }
-.contact .center1 .grid-half2__left, .contact .center1 .grid-half2__right {
+.contact .center1 .grid-half2__left,
+.contact .center1 .grid-half2__right {
   padding: 0 0 0 0;
 }
 .contact__icons {
@@ -721,4 +725,4 @@ header {
   width: 9.375rem;
   height: 9.375rem;
   object-fit: cover;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

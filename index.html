@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="/dist/css-import/decor-svg.css" />
     <link rel="stylesheet" href="/dist/css-import/project-sec.css" />
     <link rel="stylesheet" href="/dist/css-import/roject.css" />
+    <link rel="stylesheet" href="/dist/css-import/game.css" />
     <link rel="stylesheet" href="/dist/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script>
@@ -290,10 +291,13 @@
         <div class="achievements__item">
           <p class="acheivements__item__title">普通話水平測試(PSC)二級乙等</p>
         </div>
+        <!-- <div id="game">
+          <div id="character"></div>
+          <div id="block"></div>
+        </div> -->
       </section>
-      <section class="experience" id="experience">
-        <div class="center">
-          <div class="padding1">
+      <section class="experience padding1" id="experience">
+        <div class="center1">
             <h1 class="">Experience</h1>
             <p class="bookish">
               The past four years of my university life is fruitful(chaotic). I
@@ -301,14 +305,8 @@
               believe the best way to show it is to make a timeline to visualize
               my journey thus far.
             </p>
-            <div class="blue-block"></div>
-          </div>
         </div>
-        <img
-          class="padding1"
-          src="./app/assets/images/timeline.png"
-          alt="What I have done from 2019 to now"
-        />
+          <div class="timeline-svg"></div>
       </section>
       <section class="projects padding1" id="projects">
         <div class="projects__intro center">
@@ -320,7 +318,7 @@
         </div>
         <div class="rojects">
           <a
-            href="https://cheddar-vase-01f.notion.site/MotOral-Flutter-Healthcare-App-1759d65509bd44ce81ab9d13221f299c"
+            href="https://edithlsy.notion.site/MotOral-Flutter-Healthcare-App-1759d65509bd44ce81ab9d13221f299c"
           >
             <div
               class="item item--style-1"
@@ -389,7 +387,7 @@
             </div>
           </a>
           <a
-            href="https://cheddar-vase-01f.notion.site/Love-Path-Advisor-UX-Quantitative-Research-9de1e907c386444a8455ad17c7089e94"
+            href="https://edithlsy.notion.site/Love-Path-Advisor-UX-Quantitative-Research-9de1e907c386444a8455ad17c7089e94"
           >
             <div
               class="item item--style-2"
@@ -445,7 +443,7 @@
           </a>
 
           <a
-            href="https://cheddar-vase-01f.notion.site/The-Making-of-this-Website-77f15f3e8de94eb390c7688e18617741"
+            href="https://edithlsy.notion.site/The-Making-of-this-Website-77f15f3e8de94eb390c7688e18617741"
           >
             <div
               class="item item--style-3"
@@ -541,7 +539,7 @@
                   />
                 </g>
               </svg>
-              <a href="https://www.notion.so/Illustrations-Showcase-83e266320d1846b79fe008ebdfd9609b?pvs=4">
+              <a href="https://edithlsy.notion.site/Illustrations-Showcase-83e266320d1846b79fe008ebdfd9609b">
               <div class="item__meta">
                 <div class="item__number">
                   <span class="item__specimen">04</span>
@@ -554,107 +552,110 @@
               </div>
             </div>
           </a>
-          <div
-            class="item item--style-5"
-            data-animation-path-duration="3000"
-            data-animation-path-easing="easeInOutQuint"
-            data-path-rotate="90"
-            data-morph-path="M 368.1,46.42 C 461,96.69 473.7,266.2 422.3,358.4 379.1,436 259.6,484.8 175,457.5 107.5,435.7 12.65,329.8 60.93,277.7 95.18,240.8 154,379.3 194.2,348.9 250.7,306 116,204.1 148.4,140.9 184.8,70.02 298,8.455 368.1,46.42 Z"
-            data-animation-image-duration="3000"
-            data-animation-image-easing="easeInOutQuint"
-            data-image-rotate="-30"
-            data-animation-deco-duration="3000"
-            data-animation-deco-easing="easeOutQuint"
-          >
-            <svg
-              class="item__svg"
-              width="500px"
-              height="500px"
-              viewBox="0 0 500 500"
+          <a href="https://edithlsy.notion.site/USThing-Booking-Page-Redesign-3aa3c3e259424d01a94a72f91cfbd97c">
+            <div
+              class="item item--style-5"
+              data-animation-path-duration="3000"
+              data-animation-path-easing="easeInOutQuint"
+              data-path-rotate="90"
+              data-morph-path="M 368.1,46.42 C 461,96.69 473.7,266.2 422.3,358.4 379.1,436 259.6,484.8 175,457.5 107.5,435.7 12.65,329.8 60.93,277.7 95.18,240.8 154,379.3 194.2,348.9 250.7,306 116,204.1 148.4,140.9 184.8,70.02 298,8.455 368.1,46.42 Z"
+              data-animation-image-duration="3000"
+              data-animation-image-easing="easeInOutQuint"
+              data-image-rotate="-30"
+              data-animation-deco-duration="3000"
+              data-animation-deco-easing="easeOutQuint"
             >
-              <clipPath id="clipShape5">
-                <path
-                  class="item__clippath"
-                  d="M 451.5,185.8 C 441.5,266.2 339.6,305 272.3,350.2 207.7,393.6 226.7,444.7 182.6,447.9 132.8,451.4 83.97,399.9 66.37,353.1 34.6,268.4 41.16,141.8 112,85.44 186.1,26.33 313.8,54.1 396,101.4 425.2,118.2 455.6,152.4 451.5,185.8 Z"
-                />
-              </clipPath>
-              <g class="item__deco">
-                <use xlink:href="#deco5" />
-              </g>
-              <g clip-path="url(#clipShape5)">
-                <image
-                  class="item__img"
-                  xlink:href="anime-img/pink1.png"
-                  x="0"
-                  y="0"
-                  height="500px"
-                  width="500px"
-                />
-              </g>
-            </svg>
-            <div class="item__meta">
-              <div class="item__number">
-                <span class="item__specimen">05</span>
-                <span class="item__reference">UX/I</span>
+              <svg
+                class="item__svg"
+                width="500px"
+                height="500px"
+                viewBox="0 0 500 500"
+              >
+                <clipPath id="clipShape5">
+                  <path
+                    class="item__clippath"
+                    d="M 451.5,185.8 C 441.5,266.2 339.6,305 272.3,350.2 207.7,393.6 226.7,444.7 182.6,447.9 132.8,451.4 83.97,399.9 66.37,353.1 34.6,268.4 41.16,141.8 112,85.44 186.1,26.33 313.8,54.1 396,101.4 425.2,118.2 455.6,152.4 451.5,185.8 Z"
+                  />
+                </clipPath>
+                <g class="item__deco">
+                  <use xlink:href="#deco5" />
+                </g>
+                <g clip-path="url(#clipShape5)">
+                  <image
+                    class="item__img"
+                    xlink:href="anime-img/pink1.png"
+                    x="0"
+                    y="0"
+                    height="500px"
+                    width="500px"
+                  />
+                </g>
+              </svg>
+              <div class="item__meta">
+                <div class="item__number">
+                  <span class="item__specimen">05</span>
+                  <span class="item__reference">UX/I</span>
+                </div>
+                <h2 class="item__title">Booking Page Redesign</h2>
+                <h3 class="item__subtitle">
+                  Redesigning interface based on user feedback with my fellow
+                  teammates
+                </h3>
               </div>
-              <h2 class="item__title">Booking Page Redesign</h2>
-              <h3 class="item__subtitle">
-                Redesigning interface based on user feedback with my fellow
-                teammates
-              </h3>
             </div>
-          </div>
-
-          <div
-            class="item item--style-6"
-            data-animation-path-duration="2000"
-            data-path-scaleX="0.7"
-            data-path-scaleY="0.7"
-            data-path-rotate="25"
-            data-morph-path="M 279.8,41.26 C 332.2,40.04 397.1,40.63 432.5,79.42 470.9,121.7 455.7,191.8 458.3,249 460.6,300.4 481.9,363.6 448.9,403.1 402.7,458.2 311.1,450.1 239.3,453.9 183.9,456.9 113.3,471.5 74.23,432.1 18.97,376.3 29.82,251.5 45.32,198.4 59.64,149.2 95.01,111.8 134.9,84.73 176.6,56.36 229.4,42.43 279.8,41.26 Z"
-            data-animation-image-duration="2000"
-            data-animation-image-easing="easeOutExpo"
-            data-image-translateY="-30"
-            data-image-scaleX="0.9"
-            data-image-scaleY="0.9"
-          >
-            <svg
-              class="item__svg"
-              width="500px"
-              height="500px"
-              viewBox="0 0 500 500"
+          </a>
+          <a href="https://www.notion.so/Sorting-Algorithms-Visualization-01bfdc6931fd4fc2b0089589626860ad?pvs=4">
+            <div
+              class="item item--style-6"
+              data-animation-path-duration="2000"
+              data-path-scaleX="0.7"
+              data-path-scaleY="0.7"
+              data-path-rotate="25"
+              data-morph-path="M 279.8,41.26 C 332.2,40.04 397.1,40.63 432.5,79.42 470.9,121.7 455.7,191.8 458.3,249 460.6,300.4 481.9,363.6 448.9,403.1 402.7,458.2 311.1,450.1 239.3,453.9 183.9,456.9 113.3,471.5 74.23,432.1 18.97,376.3 29.82,251.5 45.32,198.4 59.64,149.2 95.01,111.8 134.9,84.73 176.6,56.36 229.4,42.43 279.8,41.26 Z"
+              data-animation-image-duration="2000"
+              data-animation-image-easing="easeOutExpo"
+              data-image-translateY="-30"
+              data-image-scaleX="0.9"
+              data-image-scaleY="0.9"
             >
-              <clipPath id="clipShape6">
-                <path
-                  class="item__clippath"
-                  d="M 274.4,32.13 C 328.5,36.28 249,139.7 287.7,192.8 326.3,245.9 483.3,248.4 459,295 434.9,341.2 341.4,267.6 298,297.5 247.4,332.3 296,461.4 233.9,467.8 177.2,473.8 214.2,326.3 176,268.3 137.8,210.5 24.39,242.4 39.89,189.3 54.21,140.1 142,158.9 184.6,129.2 221.1,103.9 229.3,28.68 274.4,32.13 Z"
-                />
-              </clipPath>
-              <g class="item__deco">
-                <use xlink:href="#deco6" />
-              </g>
-              <g clip-path="url(#clipShape6)">
-                <image
-                  class="item__img"
-                  xlink:href="anime-img/blue1.png"
-                  x="0"
-                  y="0"
-                  height="500px"
-                  width="500px"
-                />
-              </g>
-            </svg>
-            <div class="item__meta">
-              <div class="item__number">
-                <span class="item__specimen">06</span>
-                <span class="item__reference">CODE</span>
+              <svg
+                class="item__svg"
+                width="500px"
+                height="500px"
+                viewBox="0 0 500 500"
+              >
+                <clipPath id="clipShape6">
+                  <path
+                    class="item__clippath"
+                    d="M 274.4,32.13 C 328.5,36.28 249,139.7 287.7,192.8 326.3,245.9 483.3,248.4 459,295 434.9,341.2 341.4,267.6 298,297.5 247.4,332.3 296,461.4 233.9,467.8 177.2,473.8 214.2,326.3 176,268.3 137.8,210.5 24.39,242.4 39.89,189.3 54.21,140.1 142,158.9 184.6,129.2 221.1,103.9 229.3,28.68 274.4,32.13 Z"
+                  />
+                </clipPath>
+                <g class="item__deco">
+                  <use xlink:href="#deco6" />
+                </g>
+                <g clip-path="url(#clipShape6)">
+                  <image
+                    class="item__img"
+                    xlink:href="anime-img/blue1.png"
+                    x="0"
+                    y="0"
+                    height="500px"
+                    width="500px"
+                  />
+                </g>
+              </svg>
+              <div class="item__meta">
+                <div class="item__number">
+                  <span class="item__specimen">06</span>
+                  <span class="item__reference">CODE</span>
+                </div>
+                <h2 class="item__title">Sorting Algorithms Visualization</h2>
+                <h3 class="item__subtitle">
+                  school project for practicing Java language
+                </h3>
               </div>
-              <h2 class="item__title">Sorting Algorithms Visualization</h2>
-              <h3 class="item__subtitle">
-                school project for practicing Java language
-              </h3>
             </div>
-          </div>
+          </a>
           <!-- <div
             class="item item--style-7"
             data-animation-path-duration="2500"
