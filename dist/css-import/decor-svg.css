@@ -20,6 +20,8 @@
 }
 
 .timeline-svg {
+  left: 50%;
+  transform: translate(28%, 0%);
   width: 95%;
   height: 0;
   padding: 0; /* reset */
