@@ -377,12 +377,12 @@ a {
 .acheivements {
   margin: 0 0 0 0;
   grid-area: abme-achieve;
-  background-color: var(--brown);
+  /* background-color: var(--brown); */
   text-align: center;
   width: 100%;
 }
 .acheivements h1 {
-  color: var(--white);
+  color: var(--black);
 }
 .acheivements__item {
   margin: 0 0 0 0;
