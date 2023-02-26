@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="/dist/css-import/decor-svg.css" />
     <link rel="stylesheet" href="/dist/css-import/project-sec.css" />
     <link rel="stylesheet" href="/dist/css-import/roject.css" />
-    <link rel="stylesheet" href="/dist/css-import/game.css" />
+    <link rel="stylesheet" href="/dist/css-import/section-animation.css" />
     <link rel="stylesheet" href="/dist/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script>
@@ -174,8 +174,7 @@
           </div>
         </div>
       </section>
-
-      <section class="adjs padding1">
+      <section class="adjs padding1 reveal">
         <p>I would consider myself as...</p>
         <div class="adjs__container center">
           <h1 class="green">C</h1>
@@ -186,7 +185,7 @@
           </div>
         </div>
       </section>
-      <section class="skills padding1 center">
+      <section class="skills padding1 center reveal">
         <p style="text-align: center">And I know how to use</p>
         <div class="grid-half">
           <div class="grid-half__left">
@@ -255,7 +254,7 @@
           </div>
         </div>
       </section>
-      <section class="acheivements center">
+      <section class="acheivements center reveal">
         <h1>Acheivements</h1>
         <div class="achievements__item">
           <p class="acheivements__item__title">First Runner-up</p>
@@ -296,7 +295,7 @@
           <div id="block"></div>
         </div> -->
       </section>
-      <section class="experience padding1" id="experience">
+      <section class="experience padding1 reveal" id="experience">
         <div class="center3">
             <h1>Experience</h1>
             <p class="bookish">
@@ -308,7 +307,7 @@
         </div>
           <div class="timeline-svg"></div>
       </section>
-      <section class="projects padding1" id="projects">
+      <section class="projects padding1 reveal" id="projects">
         <div class="projects__intro center">
           <h1>Projects</h1>
           <p>
@@ -802,7 +801,7 @@
           </div> -->
         </div>
       </section>
-      <section class="contact" id="contact">
+      <section class="contact reveal" id="contact">
         <div class="center1">
           <div class="grid-half2">
             <div class="gird-half2__left padding-s">
@@ -843,5 +842,24 @@
     </div>
     <script src="app/js/anime.min.js"></script>
     <script src="app/js/projmain.js"></script>
+    <script type="text/javascript">
+      window.addEventListener('scroll', reveal);
+
+      function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i=0; i< reveals.length; i++){
+
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 80;
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+          }else{
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+    </script>
   </body>
 </html>

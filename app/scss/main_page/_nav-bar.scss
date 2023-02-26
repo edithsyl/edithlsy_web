@@ -9,11 +9,12 @@
     "abme-skill"
     "abme-achieve"
     "exp"
+    "exp"
     "project"
     "project"
     "contact";
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 0.8fr);
+  grid-template-rows: repeat(9, 0.8fr);
 }
 
 header {
