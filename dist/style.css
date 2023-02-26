@@ -335,7 +335,7 @@ a {
     font-size: 50rem;
   }
 }
-@media (min-width: ) {
+@media (min-width: 43.75em) {
   .adjs__container h1 {
     font-size: 37.5rem;
   }
@@ -644,16 +644,10 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-
-.blue-block {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60%;
-  height: 16rem;
-  background-color: var(--blue);
-  mix-blend-mode: difference;
-  overflow: hidden;
+.experience .center3 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bg-dark-yellow {

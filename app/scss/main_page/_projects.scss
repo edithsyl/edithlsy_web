@@ -18,6 +18,10 @@
 .projects {
   grid-area: project;
   margin: 0;
+
+  &__intro {
+    width: 80%;
+  }
 }
 
 .rojects {
