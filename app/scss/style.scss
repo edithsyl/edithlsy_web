@@ -3,17 +3,3 @@
 @forward "layout";
 @forward "main_page";
 @forward "project_page";
-
-// .achievements {
-//   background-color: var(--background);
-//   text-align: center;
-//   @include u.breakpoint(medium) {
-//     text-align: left;
-//   }
-//   h1 {
-//     margin: 0; // reset to overwrite browser setting
-//     padding: 0;
-//     font-family: u.$Lusitana, Arial;
-//     color: var(--white);
-//   }
-// }
