@@ -436,9 +436,9 @@ a {
 
 .main {
   display: grid;
-  grid-template-areas: "hero" "abme-adj" "abme-skill" "abme-achieve" "exp" "project" "project" "contact";
+  grid-template-areas: "hero" "abme-adj" "abme-skill" "abme-achieve" "exp" "project" "contact";
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 0.8fr);
+  grid-template-rows: 1fr repeat(4, 0.5fr) 1.2fr auto;
 }
 
 header {
