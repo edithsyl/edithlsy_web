@@ -129,13 +129,21 @@ a:focus {
 }
 
 .item__title {
-  font-size: 1.165em;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  font-family: "Josefin Sans", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: clamp(0.875rem, 0.75rem + 1vw, 1.5rem);
+  font-weight: 700;
+  width: 100%;
+  margin: 1em 0 0 0;
+  /* font-size: 1.165em;
   font-weight: 600;
   width: 100%;
   margin: 1em 0 0 0;
   text-align: center;
   letter-spacing: 0.125em;
-  color: #fff;
+  color: #fff; */
 }
 
 .item__subtitle {
@@ -149,7 +157,7 @@ a:focus {
 
 /* Individual styles */
 .item--style-1 .item__deco {
-  fill: #dcdcde8f;
+  fill: #e4e2e0c3;
 }
 
 .item--style-2 .item__deco {
@@ -161,11 +169,11 @@ a:focus {
 }
 
 .item--style-4 .item__deco {
-  fill: #c3afded4;
+  fill: #a5ccdfac;
 }
 
 .item--style-5 .item__deco {
-  fill: #a27f7fda;
+  fill: #001a83b3;
 }
 
 .item--style-6 .item__deco {
